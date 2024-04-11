@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int a[n];
+    for (int i=0; i < n; i++) cin >> a[i];
+
+    int pos = 0;
+    int neg = 0;
+    int zero = 0;
+    for (int i = 0; i < n; i++) {
+        if (a[i] > 0) pos++;
+        else if (a[i] < 0) neg++;
+        else zero++;        
+    }
+    
+    double cnt = pos + neg + zero;
+    double posRatio = pos / cnt;
+    double negRatio = neg / cnt;
+    double zeroRatio = zero / cnt;
+    cout << setprecision(6) << fixed << posRatio << endl;
+    cout << setprecision(6) << fixed << negRatio << endl;
+    cout << setprecision(6) << fixed << zeroRatio << endl;
+
+    return 0;
+}
