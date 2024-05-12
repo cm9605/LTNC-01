@@ -1,0 +1,23 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int a, b; 
+    cin >> a >> b;
+    
+    int *x = &a;
+    int *y = &b;
+    
+    int c = *x + *y;
+    int d = abs(*x - *y);
+    
+    cout << c << endl;
+    cout << d << endl;
+    
+    return 0;
+}
