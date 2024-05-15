@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+#include <limits>
+
+using namespace std;
+
+int main() {
+    int i = 4;
+    double d = 4.0;
+    string s = "HackerRank ";
+
+    int sinterger;
+    double sdouble;
+    string sstring;
+    cin >> sinterger >> sdouble;
+    getline(cin, sstring);
+    getline(cin, sstring);
+
+    cout << i + sinterger << endl;
+    cout << setprecision(1) << fixed << d + sdouble << endl;
+    cout << s << "" << sstring;
+    return 0;
+}
